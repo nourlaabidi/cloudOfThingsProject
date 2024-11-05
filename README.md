@@ -1,2 +1,2 @@
 # cloudOfThingsProject
-nom du domain: smartGardenIrrigation.me
+nom du domain: https://smartgardenirrigation.me
