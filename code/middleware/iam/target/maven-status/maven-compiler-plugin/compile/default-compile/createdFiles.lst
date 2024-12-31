@@ -1,0 +1,14 @@
+com\supcom\cot\smartirrigation\HelloResource.class
+com\supcom\cot\smartirrigation\entities\CORS.class
+com\supcom\cot\smartirrigation\entities\User.class
+com\supcom\cot\smartirrigation\JaxRSActivator.class
+com\supcom\cot\smartirrigation\util\OAuth2PKCE.class
+com\supcom\cot\smartirrigation\entities\FieldPropertyVisibilityStrategy.class
+com\supcom\cot\smartirrigation\util\Argon2Utility.class
+com\supcom\cot\smartirrigation\controllers\UserManager.class
+com\supcom\cot\smartirrigation\controllers\Role.class
+com\supcom\cot\smartirrigation\HelloApplication.class
+com\supcom\cot\smartirrigation\util\Identity.class
+com\supcom\cot\smartirrigation\repositories\UserRepository.class
+com\supcom\cot\smartirrigation\boundaries\SignUpEndpoint.class
+com\supcom\cot\smartirrigation\boundaries\SignInEndpoint.class

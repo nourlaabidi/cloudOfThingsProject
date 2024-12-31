@@ -1,0 +1,19 @@
+{
+    "name":"Smart irrigation",
+    "short_name": "Smart irrigation ",
+    "scope": ".",
+    "theme_color": "#000",
+    "background_color": "#000",
+    "icons": [
+        {
+            "src": "./icons/icon.png",
+            "type":"image/png",
+            "sizes":"245x245"
+        }
+
+    ],
+    "start_url":"/",
+    "display":"standalone",
+    "permissions": [ "notifications", "geolocation" ]
+
+}
