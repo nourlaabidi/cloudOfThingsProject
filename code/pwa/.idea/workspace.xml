@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3c5786f7-b0b2-490c-a8d5-0b58404e33cd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../middleware/iam/src/main/webapp/assets/img/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../middleware/iam/src/main/webapp/css/signin.css" beforeDir="false" afterPath="$PROJECT_DIR$/../middleware/iam/src/main/webapp/css/signin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../middleware/iam/src/main/webapp/icons/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../middleware/iam/src/main/webapp/icons/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/../middleware/iam/src/main/webapp/icons/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../middleware/iam/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../middleware/iam/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../middleware/iam/src/main/webapp/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../middleware/iam/src/main/webapp/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../middleware/iam/src/main/webapp/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../middleware/iam/src/main/webapp/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../middleware/iam/src/main/webapp/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/../middleware/iam/src/main/webapp/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../middleware/iam/src/main/webapp/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/../middleware/iam/src/main/webapp/sw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../middleware/iam/target/smartirrigation-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../middleware/iam/target/smartirrigation-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../middleware/iam/target/smartirrigation-1.0-SNAPSHOT/assets/img/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../middleware/iam/target/smartirrigation-1.0-SNAPSHOT/css/signin.css" beforeDir="false" afterPath="$PROJECT_DIR$/../middleware/iam/target/smartirrigation-1.0-SNAPSHOT/css/signin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../middleware/iam/target/smartirrigation-1.0-SNAPSHOT/icons/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../middleware/iam/target/smartirrigation-1.0-SNAPSHOT/icons/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/../middleware/iam/target/smartirrigation-1.0-SNAPSHOT/icons/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../middleware/iam/target/smartirrigation-1.0-SNAPSHOT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../middleware/iam/target/smartirrigation-1.0-SNAPSHOT/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../middleware/iam/target/smartirrigation-1.0-SNAPSHOT/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../middleware/iam/target/smartirrigation-1.0-SNAPSHOT/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../middleware/iam/target/smartirrigation-1.0-SNAPSHOT/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../middleware/iam/target/smartirrigation-1.0-SNAPSHOT/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../middleware/iam/target/smartirrigation-1.0-SNAPSHOT/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/../middleware/iam/target/smartirrigation-1.0-SNAPSHOT/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../middleware/iam/target/smartirrigation-1.0-SNAPSHOT/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/../middleware/iam/target/smartirrigation-1.0-SNAPSHOT/sw.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2r1ghw7DLWsBe7a3Kge1mBNsYgj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Laabi/OneDrive/Desktop/cot/code/middleware/iam",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-f644763e9732-c0c073db" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3c5786f7-b0b2-490c-a8d5-0b58404e33cd" name="Changes" comment="" />
+      <created>1735732117342</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1735732117342</updated>
+      <workItem from="1735732118389" duration="10000" />
+    </task>
+    <servers />
+  </component>
+</project>

@@ -98,7 +98,13 @@
           <groupId>de.mkammerer</groupId>
           <artifactId>argon2-jvm</artifactId>
           <version>2.11</version>
-      </dependency>  </dependencies>
+      </dependency>
+      <dependency>
+          <groupId>jakarta.platform</groupId>
+          <artifactId>jakarta.jakartaee-web-api</artifactId>
+          <version>10.0.0</version>
+      </dependency>
+  </dependencies>
 
   <build>
       <plugins>

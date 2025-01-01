@@ -1,0 +1,10 @@
+#map {
+    width: 100%;
+    height: 80%;
+    padding-left:18%;
+    position: absolute;
+    overflow: hidden;
+    background-color: #e9e9e9;
+}
+
+  

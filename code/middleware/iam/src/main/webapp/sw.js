@@ -17,7 +17,7 @@ self.addEventListener("activate", event => {
     // Delete any non-current cache
     event.waitUntil(
     caches.keys().then(keys => {
-    Promise.all(
+    Promise.all( 
     keys.map(key => {
     if (![cacheName].includes(key)) {
     return caches.delete(key);
