@@ -3,16 +3,136 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Smart Irrigation System</title>
+    <title>Smart Garden</title>
 	<link rel="manifest" href="../manifest.json" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<!-- My CSS -->
 	<link rel="stylesheet" href="../css/style.css">
 
+	<title>Smart Garden</title>
+	<link rel="icon" href="../favicon.ico" type="image/x-icon">
+	<script src="../js/jquery.min.js"></script>
+
 </head>
 <body>
-<h1> success </h1>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar" >
+		<a href="dashboard.html" class="brand">
+			<img src="../assets/img/logo.png" style="width: 150px; height: auto; padding-left: 8%;">
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="dashboard.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="map.html">
+					<i class='bx bxs-map' ></i>
+					<span class="text">Map</span>
+				</a>
+			</li>
+	
+		
+		</ul>
+		<ul class="side-menu">
+			
+			<li>
+				<a href="index.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="profile">
+				<img src="../assets/img/s_icon.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="dashboard.html">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="dashboard.html">Home</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div id="sensorsContainer">
+
+			</div> 
+
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Pump Status</h3>
+						<!-- <i class='bx bx-search' ></i>
+						<i class='bx bx-filter' ></i> -->
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Pump</th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img src="../assets/img/pump.png">
+								</td>
+								<td id="btn-status"></td>
+								<td><button id="pump" class="btn">Predict</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+<script src="../js/script.js"></script>
+<script src="../js/alert.js"></script>
+<script src="../js/pump.js"></script>
+
+
 </body>
 </html>

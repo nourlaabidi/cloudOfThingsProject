@@ -139,7 +139,7 @@ body {
 	overflow-x: hidden;
 }
 #sidebar .side-menu.top li.active a {
-	color: var(--blue);
+	color: #7cb62b;
 }
 #sidebar.hide .side-menu li a {
 	width: calc(48px - (4px * 2));
@@ -242,7 +242,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: var(--blue);
+	background: #7cb62b;
 	color: var(--light);
 	font-size: 18px;
 	border: none;
@@ -292,7 +292,7 @@ body {
 	left: 2px;
 	bottom: 2px;
 	width: calc(25px - 4px);
-	background: var(--blue);
+	background: #7cb62b;
 	border-radius: 50%;
 	transition: all .3s ease;
 }
@@ -339,7 +339,7 @@ body {
 	pointer-events: none;
 }
 #content main .head-title .left .breadcrumb li a.active {
-	color: var(--blue);
+	color:#7cb62b;
 	pointer-events: unset;
 }
 #content main .head-title .btn-download {
