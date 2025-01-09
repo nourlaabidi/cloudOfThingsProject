@@ -97,7 +97,7 @@ console.log("step2",step2)
                  localStorage.setItem("refreshtoken",data.refreshToken);
                  localStorage.removeItem("signInId");
                  console.log('ok')
-                 location.href = "http://localhost:5500/pages/dashboard.html";
+                 location.href = "pages/dashboard.html";
                  
                 }
             })

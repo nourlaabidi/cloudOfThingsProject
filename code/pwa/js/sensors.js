@@ -8,7 +8,7 @@ var Authorizationheader = "Bearer " + accesstoken
 console.log(accesstoken)
 
 $.ajax({
-    url: 'http://localhost:8080/smartirrigation-1.0-SNAPSHOT/api/sensor', // Assuming this endpoint returns data for all sensors
+    url: baseURL + 'api/sensor', // Assuming this endpoint returns data for all sensors
     type: 'GET',
     headers: {
         'Accept': 'application/json',

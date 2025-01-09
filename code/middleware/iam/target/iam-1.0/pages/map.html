@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Smart Garden</title>
+	<link rel="manifest" href="../manifest.json" />
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../assets/css/map.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/ol-layerswitcher@4.1.0/dist/ol-layerswitcher.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css" />
+
+
+   
+	<title>Smart Garden</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.1.0/ol.css" />
+    <link rel="shortcut icon" href="../assets/img/logo.jpg">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/map.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ol@v7.1.0/dist/ol.js"></script>
+    <script src="https://unpkg.com/ol-layerswitcher@4.1.0"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+	<!-- <script>
+		if ("serviceWorker" in navigator) {
+	window.addEventListener("load", () => {
+	
+	navigator.serviceWorker.register("./scripts/sw.js");
+	});
+	}
+
+
+	</script> -->
+</head>
+<body>
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="dashboard.html" class="brand">
+			<img src="../assets/img/logo.png" style="width: 150px; height: auto; padding-left: 8%;">
+		</a>
+		<ul class="side-menu top">
+			<li >
+				<a href="dashboard.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="map.html">
+					<i class='bx bxs-map' ></i>
+					<span class="text">Map</span>
+				</a>
+			</li>
+		
+			
+		
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="index.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="profile">
+				<img src="../assets/img/s_icon.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Map</h1> 
+					<ul class="breadcrumb">
+						<li>
+							<a href="dashboardi.html">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Home</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+            
+        </main>
+        <button id="button_pos" class="myButton">
+            <i class="fa fa-street-view fa-lg"></i>My Position</button>
+            <button id="button zoom" class="myButton">
+            <i class="fa fa-globe fa-lg"></i>Global view</button>
+    </section>
+    <div class="page-container">
+        <div id="map">
+        </div>
+    </div>
+
+</body>
