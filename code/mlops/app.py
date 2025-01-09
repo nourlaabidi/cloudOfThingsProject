@@ -3,6 +3,7 @@ from joblib import load
 import pandas as pd
 import numpy as np
 import os
+from flask_cors import CORS
 
 # Charger le modèle et le scaler
 MODEL_DIR = "model/"
@@ -46,6 +47,7 @@ def make_prediction(input_data_str):
 
 # Créer une application Flask
 app = Flask(__name__)
+CORS(app) 
 
 @app.route("/predict", methods=["POST"])
 def predict_endpoint():

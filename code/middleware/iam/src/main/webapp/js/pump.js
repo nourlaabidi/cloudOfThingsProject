@@ -1,64 +1,43 @@
+const jumbotron = document.querySelector(".jumbotron");
+
+
+var accesstoken = localStorage.getItem("accesstoken")
+var mail = localStorage.getItem("mail")
+var Authorizationheader = "Bearer " + accesstoken
+console.log(accesstoken)
 document.addEventListener('DOMContentLoaded', function () {
 
     document.getElementById('pump').addEventListener('click', function () {
 
-        const socket = new WebSocket("ws://localhost:8765");
+        $.ajax({
+            url: 'http://127.0.0.1:5000/predict',  // URL de ton API
+            type: 'POST',  // Méthode POST
+            headers: {
+                'Accept': 'application/json',  // En-tête pour accepter la réponse JSON
+                'Authorization': Authorizationheader
+            },
+            data: "2,3,5",  // Données à envoyer (en texte brut)
 
-        // Create a WebSocket connection
-        const storedSensorData = JSON.parse(localStorage.getItem('sensorData'));
-        const btn_status = document.getElementById("btn-status");
+            success: function(response) {
+                // Ce qui se passe si la requête réussit
+                console.log("Réponse du serveur : ", response);
 
-        lastSensor = storedSensorData[storedSensorData.length - 1]
-        console.log('last',lastSensor)
-
-        let temp = (lastSensor.temperature).toString()
-        let hum =  (lastSensor.humidity).toString()
-        let mois = (lastSensor.moisture).toString()
-
-        const input = mois + ',' + temp + ',' + hum
-        console.log('input',input)
-
-        // Listen for the connection open event
-        socket.addEventListener('open', (event) => {
-            console.log('WebSocket connection opened:', event);
-            // Send a string to the WebSocket server
-            const messageToSend = input;
-            socket.send(messageToSend);
-        });
-
-
-        // Listen for messages from the WebSocket server
-        socket.addEventListener('message', (event) => {
-            // Handle the response string from the server
-            const status = event.data;
-            console.log('Received response from server:', status);
-            // Store the response string (you can save it to localStorage or another storage mechanism)
-            localStorage.setItem('PumpStatus', status);
-
-            updateUI(status);
-        });
-
-        function updateUI(PumpStatus) {
-            if (PumpStatus === '1') {
-                btn_status.innerHTML = `<span class="status completed">ON</span>`;
-            } else if (PumpStatus === '0') {
-                btn_status.innerHTML = `<span class="status off">OFF</span>`;
+                // Mettre à jour le statut de la pompe
+                if(response.prediction === 1) {
+                    document.getElementById('btn-status').innerText = 'Pump ON';
+                    document.getElementById('btn-status').style.color = 'green';
+                } else {
+                    document.getElementById('btn-status').innerText = 'Pump OFF';
+                    document.getElementById('btn-status').style.color = 'red';
+                }
+            },
+            error: function(xhr, status, error) {
+                // Ce qui se passe en cas d'erreur
+                console.error("Erreur lors de la requête : ", error);
+                document.getElementById('btn-status').innerText = 'Error';
+                document.getElementById('btn-status').style.color = 'red';
             }
-        }
-
-
-        // Listen for errors
-        socket.addEventListener('error', (event) => {
-            console.error('WebSocket error:', event);
         });
-
-        // Listen for the connection close event
-         socket.addEventListener('close', (event) => {
-           console.log('WebSocket connection closed:', event);
-         });
-
-
-
 
     });
 });
