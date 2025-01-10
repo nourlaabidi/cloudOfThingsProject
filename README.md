@@ -50,14 +50,6 @@ If you have ideas for improvements, bug fixes, or additional features, feel free
 
 ---
 
-## 🖼️ Screenshots  
-
-### Real-Time Dashboard  
-
-### Sensor Data Monitoring  
-
----
-
 ## 🔗 Useful Links  
 
 - [How to Deploy a Secure WildFly Application Server](https://medium.com/@chaymahamdii/how-to-deploy-a-secure-wildfly-application-server-30-0-0-final-on-azure-vm-hsts-tls-1-3-ee0df0794151)  
