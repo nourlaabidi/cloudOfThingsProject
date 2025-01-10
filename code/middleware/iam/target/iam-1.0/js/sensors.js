@@ -26,13 +26,14 @@ $.ajax({
             const moisture = sensor.moisture;
 
             sensorInfoHTML += `
+                <div class="sensor-info">
                     <h2>Sensor ${sensor.id}</h2>
                     <ul class="box-info">
                         <li>
                             <i class='bx bxs-thermometer'></i>
                             <span class="text">
                                 <h3>${temperature}</h3>
-                                <p>°C Temperature</p>
+                                <p>% Humidity</p>
                             </span>
                         </li>
                         <li>
@@ -46,10 +47,11 @@ $.ajax({
                             <i class='bx bxs-tachometer'></i>
                             <span class="text">
                                 <h3>${humidity}</h3>
-                                <p>% Humidity</p>
+                                <p>°C Temperature</p>
                             </span>
                         </li>
-                    </ul>`;
+                    </ul>
+                </div>`;
         });
 
         // Append all sensor info HTML to a container element (e.g., #sensorsContainer)

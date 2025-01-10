@@ -1,9 +1,9 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from joblib import load
 import pandas as pd
 import numpy as np
 import os
-from flask_cors import CORS
 
 # Charger le modèle et le scaler
 MODEL_DIR = "model/"

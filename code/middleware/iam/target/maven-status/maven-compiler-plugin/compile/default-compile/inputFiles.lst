@@ -8,6 +8,7 @@ C:\Users\Laabi\OneDrive\Desktop\cot\code\middleware\iam\src\main\java\com\supcom
 C:\Users\Laabi\OneDrive\Desktop\cot\code\middleware\iam\src\main\java\com\supcom\cot\smartirrigation\boundaries\SignInEndpoint.java
 C:\Users\Laabi\OneDrive\Desktop\cot\code\middleware\iam\src\main\java\com\supcom\cot\smartirrigation\entities\CORS.java
 C:\Users\Laabi\OneDrive\Desktop\cot\code\middleware\iam\src\main\java\com\supcom\cot\smartirrigation\entities\Sensor.java
+C:\Users\Laabi\OneDrive\Desktop\cot\code\middleware\iam\src\main\java\com\supcom\cot\smartirrigation\mqtt\mqttconsumer.java
 C:\Users\Laabi\OneDrive\Desktop\cot\code\middleware\iam\src\main\java\com\supcom\cot\smartirrigation\boundaries\PublishWebsocketEndpoint.java
 C:\Users\Laabi\OneDrive\Desktop\cot\code\middleware\iam\src\main\java\com\supcom\cot\smartirrigation\entities\User.java
 C:\Users\Laabi\OneDrive\Desktop\cot\code\middleware\iam\src\main\java\com\supcom\cot\smartirrigation\boundaries\SensorEndpoint.java

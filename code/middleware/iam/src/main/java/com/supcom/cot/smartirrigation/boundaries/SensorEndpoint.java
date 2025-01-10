@@ -30,6 +30,15 @@ public class SensorEndpoint {
     public void save(Sensor sensor) {
         repository.save(sensor);
     }
+    @GET
+    @Path("/last")  // Ajoute une route pour récupérer le dernier capteur
+    public Sensor findLast() {
+        List<Sensor> sensors = repository.findAll().collect(toList());
+        if (sensors.isEmpty()) {
+            throw new WebApplicationException("No sensors found", Response.Status.NOT_FOUND);
+        }
+        return sensors.get(sensors.size() - 1);  // Retourne le dernier capteur
+    }
 
     @PUT
     @Path("{id}")
