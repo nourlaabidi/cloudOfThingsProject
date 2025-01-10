@@ -123,27 +123,5 @@ public class SignInEndpoint {
         }
         return Response.status(Response.Status.UNAUTHORIZED).entity("{\"message\":\"Unauthorized Access!\"}").build();
     }
-    @POST //For the dashboard, this will serve as the second step. the only difference is that
-    @Path("/authenticateadmin")
-    @Consumes(MediaType.APPLICATION_JSON)
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response signInAdmin(String json){
-        JSONObject obj = new JSONObject(json);
-        String mail=obj.getString("mail"); //get the username password and signinId from the json object sent by the client
-        String password=obj.getString("password");
-        String signInId=obj.getString("signInId");
-        if(mail == null || password == null || signInId == null ||
-                mail.length()<4 || mail.length()>30 ){
-            return Response.status(Response.Status.NOT_ACCEPTABLE).entity("{\"message\":\"Invalid Credentials!\"}").build();
-        }
-        try {
-            Identity identity = identityController.authenticateadmin(mail,password);// check if the user exists and his password against the hashed argon2 password are valid
-            return Response.ok()
-                    .entity("{\"authCode\":\""+oAuth2PKCE.generateAuthorizationCode(signInId,identity)+"\"}") //return authorization code
-                    .build();
-        } catch (EJBException e) {
-            return Response.status(Response.Status.UNAUTHORIZED) //return status unauthorized if the conditions are not met
-                    .entity("{\"message\":\""+e.getMessage()+"\"}").build();
-        }
-    }
+
 }
